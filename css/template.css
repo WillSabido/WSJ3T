@@ -1,0 +1,388 @@
+/**
+* @author    Will Sabido http://webisabi.co.uk
+* @copyright Copyright (C) 2013 WebiSabi.co.uk. All rights reserved.
+* @license   GPLv2.0
+*/
+/* ================== Webi Sabi Joomla! 3 Template Stylesheet ================*/
+/* ========================== Created - 22/08/2013 ========================== */
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES ============================ */
+html, body {
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 75%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+h6 {
+	font-size: 12px;
+	font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #3d3d3d;
+	margin: 0.5em 0;
+	font-weight: 300;
+}
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+	outline: none;
+	text-decoration: none;
+}
+div.box-red a,
+div.box-blue a,
+div.box-green a,
+div.box-orange a,
+div.box-violet a {
+	color: #fff;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration:underline;
+}
+a:active {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+.button-link {
+	display: block;
+    padding: 10px 25px;
+    margin: 10px auto;
+    width:70%;
+    background: #619b5f;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2em;
+    -webkit-border-radius: 15px 30px;
+    -moz-border-radius: 15px 30px;
+    border-radius: 15px 30px;
+    border: bevel 2px #3c5a3b;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.button-link:hover {
+	color: #ffffff;
+	font-weight: bold;
+    background: #508a4e;
+    border: groove 2px #619b5f;
+    text-decoration: none;
+    line-height: 2em;
+}
+.button-link:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #08d800;
+    border: solid 2px #202020;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - GENERAL TYPOGRAPHY =============== */
+.hd {
+	display: none;
+}
+/* ----- PREDEFINED CONTENT ALIGN ----- */
+.align-left {
+	float: left;
+}
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.align-right {
+	float: right;
+}
+.margin-left {
+	margin-left: 1em;
+	margin-right: 0;
+}
+.margin-right {
+	margin-left: 0;
+	margin-right: 1em;
+}
+.content-left {
+	text-align: left;
+}
+.content-center {
+	text-align: center;
+}
+.content-right {
+	text-align: right;
+}
+/* =============== TYPOGRAPHY - TEXT STYLES =============== */
+.text-box {
+	padding: .8em;
+	border: 1px solid #e5e5e5;
+}
+.text-box-highlight {
+	padding: .8em;
+	border: 1px solid transparent;
+}
+.text-box-highlight:hover {
+	border-color: #d9d9d9;
+	background-color: #f2f2f2;
+}
+.text-highlight {
+	padding: .2em .5em;
+	background: #FFFFAA;
+}
+.text-highlight.highlight-green {
+	color: #fff;
+	background: #48691b;
+}
+.text-highlight.highlight-light {
+	color: #000;
+	background: #e5e5e5;
+}
+.text-highlight.highlight-dark {
+	color: #fff;
+	background: #595959;
+}
+.text-dropcap p:first-child:first-letter,
+p.text-dropcap:first-child:first-letter {
+	color: #404040;
+	font: 4em/.8em "Times New Roman", Times, serif;
+	float: left;
+}
+.text-size-small {
+	font-size: 0.9em;
+}
+.text-size-medium {
+	font-size: 1em;
+}
+.text-size-large {
+	font-size: 1.1em;
+}
+.text-size-xlarge {
+	font-size: 1.2em;
+}
+.text-size-xxlarge {
+	font-size: 1.3em;
+}
+hr.line-dots {
+	border: none;
+	padding: 0.5em 0;
+	background: url(../images/dot.png) left center repeat-x;
+}
+hr.line-solid {}
+/* ----- More styles -----*/
+.intro {
+	font-size:1.2em;
+}
+/* ----- Tick List Styling ----- */
+.tick-list li {
+background-image: url('/~wpdev/images/datacentre/smalltick.png'); 
+display: block; 
+padding: 0px 0px 5px 25px; 
+color: #454545; 
+font-family: inherit; 
+font-size: 12px;
+line-height: 21px; 
+list-style: none; 
+background-repeat: no-repeat no-repeat;
+}
+/* ----- ACTION LINK ----- */
+.link-action {
+	font-weight: bold;
+	padding: 1px 2px;
+	text-decoration: none;
+}
+.link-action:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/* ----- HIGHLIGHT LINK ----- */
+.link-highlight {
+	color: #3d3d3d;
+	font-weight: bold;
+	display: block;
+	padding: 5px;
+	border: 1px solid transparent;
+}
+.link-highlight:hover {
+	color: #000;
+	border-color: #e6e6e6;
+	text-decoration: none;
+	background-color: #f2f2f2;
+}
+/* ----- TOOLTIPS LINK ----- */
+a.link-tooltip {
+	position: relative;
+}
+a.link-tooltip:hover {
+	z-index: 25;
+}
+a.link-tooltip span {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+a.link-tooltip:hover span {
+	display: block;
+}
+/* ================================== Main styles ================================ */
+.main_container {
+    width:940px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.mid_container {
+    margin:20px 0px;
+}
+.main_content_area {
+	float:left;
+	width:700px;
+}
+.right_sidebar {
+	float:right;
+	width: 220px;
+}
+.main_content_area,
+.right_sidebar,
+.footer,
+.header {
+	border:0px solid #bbb;
+}
+/* Log in form styling */
+#login-form {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	background:#efefef;
+	border:2px groove #eee;
+	padding:5px;
+	margin:0px 0px 5px 0px;
+}
+/* Box Styles */
+.box {
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	border-radius: 15px;
+	background:#efefef;
+	border:2px groove #eee;
+	padding:10px;
+	margin:10px;
+	-moz-box-shadow:inset 0px 0px 1px #ffffff;
+    -webkit-box-shadow:inset 0px 0px 1px #ffffff;
+    box-shadow:inset 0px 0px 1px #ffffff;
+}
+.porthole {
+	height:100px;
+	width:100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-khtml-border-radius: 50px;
+	border-radius: 50px;
+	background:#efefef;
+	border:2px groove #eee;
+	padding:10px;
+	margin:10px;
+	-moz-box-shadow:inset 0px 0px 1px #ffffff;
+    -webkit-box-shadow:inset 0px 0px 1px #ffffff;
+    box-shadow:inset 0px 0px 1px #ffffff;
+}
+/* ================================== Menu styles ================================ */
+div#main ul.nav.maximenuck {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	height: 30px;
+	font-size: 16px;
+	line-height: 18px;
+	padding-bottom: 2px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    filter: none;
+    background: #adadad;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+    background: linear-gradient(top,  #ffffff 0%,#efefef 100%);
+    border-bottom: 1px solid #b1b1b1;
+    -moz-box-shadow:inset 0px 0px 1px #ffffff;
+    -webkit-box-shadow:inset 0px 0px 1px #ffffff;
+    box-shadow:inset 0px 0px 1px #ffffff;
+}
+/* Level 1 root menu */
+div#main ul.nav.maximenuck li.maximenuck.level1 {
+    border: 1px solid transparent;
+    box-shadow: none;
+    /*float:left;*/
+    text-align:center;
+    padding: 3px 9px 3px 9px;
+    margin-right: 35px;
+    margin-top: 2px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+div#main ul.nav.maximenuck li.maximenuck.level1:hover,
+div#main ul.nav.maximenuck li.maximenuck.level1.active {
+    border: 1px solid #ffffff;
+    background: #F4F4F4;
+    background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4), to(#EEEEEE));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:inset 0px 0px 1px #ededed;
+    -webkit-box-shadow:inset 0px 0px 1px #ededed;
+    box-shadow:inset 0px 0px 1px #ededed;
+}
+/* submenus container */
+div#main ul.nav.maximenuck li div.floatck {
+	width : 180px; /* default width */
+	margin: 2px 0 0 -10px;
+	text-align:left;
+	padding:5px 5px 0 5px;
+	border:1px solid #ffffff;
+	border-top:none;
+	background:#F4F4F4;
+	background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#BBBBBB));
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+}
+/* hovering cursor styling */
+div#main .maxiFancybackground .maxiFancycenter {
+    border-top: 1px solid #b1b1b1 !important;
+}
+div#main ul.maximenuck li.maximenuck.level1 > a,
+div#main ul.maximenuck li.maximenuck.level1 > span.separator {
+	min-height: 18px !important;
+}
