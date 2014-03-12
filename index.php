@@ -56,16 +56,15 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
     	<div class='carousel row'>
     		<div class='span12'>
     			<jdoc:include type="modules" name="top" style="none" />
+				<jdoc:include type="modules" name="carousel" style="none" />
     		</div>
     	</div>
         <!-- mid container - includes main content area and right sidebar -->
         <div class='mid_container row'>
             <!-- main content area -->
-            <div class='main_content_area span12'>
+            <div class='main_content_area span9'>
                 <!-- This code will create the module positions for our main content area -->
-                <jdoc:include type="modules" name="carousel" style="xhtml" />
                 <jdoc:include type="modules" name="breadcrumbs" style="none" />
-                <jdoc:include type="modules" name="buttons" style="none" />
                 <jdoc:include type="modules" name="social" style="none" />
 				<jdoc:include type="message" />
 				<jdoc:include type="component" />
@@ -74,20 +73,24 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
             <div class='right_sidebar span3'>
                 <jdoc:include type="modules" name="position-7" style="well" />
             </div>
-            <div class='span12'>
-                <!-- This code will create the module positions for our main content area -->
-                <jdoc:include type="modules" name="breadcrumbs" style="none" />
+            <div style='clear:both;'></div>
+            <div class='button_box span12'>
+                <!-- This code will create the module positions for our boxes area -->
                 <jdoc:include type="modules" name="buttons" style="none" />
-                <jdoc:include type="modules" name="social" style="none" />
             </div>
             <div style='clear:both;'></div>
         </div>
         <!-- footer -->
         <div class='footer row'>
             <div id='100' class='span12'>
+                <jdoc:include type="modules" name="social" style="none" />
             	<jdoc:include type="modules" name="footer" style="xhtml" />
             </div>
         </div>
     </div>
+<script type="text/javascript"> var $ = jQuery.noConflict(); $(document).ready(function() 
+ { $('#myCarousel').carousel({ interval: 8000, cycle: true }); }); 
+
+</script>
 </body>
 </html>
