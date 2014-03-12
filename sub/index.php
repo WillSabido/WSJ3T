@@ -1,5 +1,4 @@
 <?php
-
 /**
  *
  * Main file
@@ -9,7 +8,6 @@
  * @copyright			Copyright (C) 2013 WebiSabi. All rights reserved.
  *               
  */
- 
 // Define call to JEXEC for security to forbid direct access. 
 defined('_JEXEC') or die;
 // to avoid the problems
@@ -23,16 +21,12 @@ defined('_JEXEC') or die;
 //require_once('lib/ws.framework.php');
 // run the framework
 //$tpl = new WSTemplate($this);
-
 // EOF
-
 $doc = JFactory::getDocument();
-
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap-responsive.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascript');
-
 ?>
 
 <!DOCTYPE html>
