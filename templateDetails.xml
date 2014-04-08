@@ -7,8 +7,8 @@
         <authorUrl>http://webisabi.co.uk</authorUrl>
         <copyright>Will Sabido 2013</copyright>
         <license>GNU/GPL</license>
-        <version>0.1</version>
-        <description>My New Joomla! 3.1.5 Template</description>
+        <version>0.2</version>
+        <description>A responsive Joomla! 3.2.3 template</description>
         <files>
                 <filename>index.php</filename>
                 <filename>templateDetails.xml</filename>
@@ -17,6 +17,7 @@
                 <folder>js</folder>
         </files>
         <positions>
+        		<position>login</position>
                 <position>breadcrumb</position>
                 <position>carousel</position>
                 <position>buttons</position>
@@ -26,6 +27,7 @@
                 <position>right</position>
                 <position>top</position>
                 <position>mainbody</position>
+                <position>rhs</position>
                 <position>user1</position>
                 <position>user2</position>
                 <position>user3</position>

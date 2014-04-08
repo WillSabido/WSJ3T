@@ -3,12 +3,11 @@
  *
  * Main file
  *
- * @version             0.1.0
+ * @version             0.2.0
  * @package             Webi Sabi Framework
- * @copyright			Copyright (C) 2013 WebiSabi. All rights reserved.
+ * @copyright			Copyright (C) 2014 WebiSabi. All rights reserved.
  *               
  */
-
 // Define call to JEXEC for security to forbid direct access. 
 defined('_JEXEC') or die;
 // to avoid the problems
@@ -23,7 +22,6 @@ defined('_JEXEC') or die;
 // run the framework
 //$tpl = new WSTemplate($this);
 // EOF
-
 $doc = JFactory::getDocument();
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap-responsive.css');
@@ -43,10 +41,11 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         <!-- header -->
         <div class='row'>
         	<header class='container-fluid'>
-        		<a href="/~wpdev/./" id="pull-left">
-        			<img src="http://webisabihosting.co.uk/~wpdev/images/ws_logo.png" alt="Webi Sabi - Transient beauty in imperfection">
+        		<a href="/." id="pull-left">
+        			<img src="http://webisabihosting.co.uk/images/ws_logo.png" alt="Webi Sabi - Transient beauty in imperfection">
         		</a>
         	</header>
+			<jdoc:include type="modules" name="login" style="well" id="pull-right" />
     	</div>
     	<div class='menu row'>
     		<div class='span12'>
@@ -71,7 +70,7 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
             </div>
             <!-- right sidebar -->
             <div class='right_sidebar span3'>
-                <jdoc:include type="modules" name="position-7" style="well" />
+                <jdoc:include type="modules" name="rhs" style="well" />
             </div>
             <div style='clear:both;'></div>
             <div class='button_box span12'>
