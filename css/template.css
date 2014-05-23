@@ -1,6 +1,6 @@
 /**
-* @author    Will Sabido http://webisabi.co.uk
-* @copyright Copyright (C) 2013 WebiSabi.co.uk. All rights reserved.
+* @author    Will Sabido http://webisabihosting.co.uk
+* @copyright Copyright (C) 2013 WebiSabiHosting.co.uk. All rights reserved.
 * @license   GPLv2.0
 */
 /* ================== Webi Sabi Joomla! 3 Template Stylesheet ================*/
@@ -428,6 +428,22 @@ div#main ul.maximenuck li.maximenuck.level1 > span.separator {
 	min-height: 18px !important;
 	color:#212121 !important;
 	text-shadow:1px 1px 1px #ffffff !important;
+}
+/* --- Table Styles --- */
+/* --- Contact Info Table --- */
+table.category td {
+	padding: 1px 4px 1px 4px;
+}
+/* --- Comparison Table --- */
+table.comparison {
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+}
+table.comparison th {
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
 }
 
 /*--- K2 Edits ----*/
