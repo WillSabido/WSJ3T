@@ -42,8 +42,91 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0.5em 0;
 	font-weight: 300;
 }
+/* ================================== Custom Heading styles ================================ */
+/* header edits for portfolio */
+h3.catItemTitle a, h2.tagItemTitle a, ul.catItemTags li, div.itemTagsBlock ul li, div.itemCategory a, div.tagItemCategory a {
+  padding: 5px 15px;
+  color: #212121;
+  background: #efefef;
+  -webkit-border-radius: 5px 10px;
+  -moz-border-radius: 5px 10px;
+  border-radius: 5px 10px;
+  border: bevel 2px #010101;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+h3.catItemTitle a:hover, h2.tagItemTitle a:hover {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+div.itemHeader h2.itemTitle, h2.tagItemTitle, div.catItemHeader h3.catItemTitle {
+ font-family: Calibri, Helvetica, sans-serif;
+}
+div.itemListCategory {
+ font-family: Calibri, Helvetica, sans-serif;
+  padding: 15px;
+  -webkit-border-radius: 10px 20px;
+  -moz-border-radius: 10px 20px;
+  border-radius: 10px 20px;
+}
+div.itemListCategory img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+ul.catItemTags li, div.itemTagsBlock ul li, div.itemCategory a, div.tagItemCategory a {
+ padding: 3px 5px;
+ margin: 3px 4px;
+}
+div.catItemTagsBlock {
+  background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: linear-gradient(top,  #ffffff 0%,#efefef 100%);
+}
+div.itemBody, div.catItemIntroText, div.tagItemBody, h3.catItemTitle {
+ font-family: Calibri, Helvetica, sans-serif;
+}
+span.catItemImage img {
+	max-width: 90%;
+}
+/* Floating Sidebar */
+div.customfsb {
+  position: fixed;
+  padding: 5px 15px;
+  color: #212121;
+  background: #efefef;
+  -webkit-border-radius: 5px 10px;
+  -moz-border-radius: 5px 10px;
+  border-radius: 5px 10px;
+  border: bevel 2px #010101;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  background: linear-gradient(top,  #ffffff 0%,#efefef 100%);
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
 /* =============== DEFAULT HTML - LINK STYLES =============== */
 a {
+	font-family: Copperplate, Calibri, sans-serif;
+	color: #212121;
 	outline: none;
 	text-decoration: none;
 }
@@ -56,7 +139,8 @@ div.box-violet a {
 	text-decoration: underline;
 }
 a:hover {
-	text-decoration:underline;
+	text-decoration:none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
 a:active {
 	text-decoration: none;
@@ -270,6 +354,16 @@ a.link-tooltip:hover span {
 .header {
 	border:0px solid #bbb;
 }
+/* Carousel Styling */
+div.carousel-inner {
+  -moz-border-radius: 5px 5px 15px 15px;
+  -webkit-border-radius: 5px 5px 15px 15px;
+  -khtml-border-radius: 5px 5px 15px 15px;
+  border-radius: 5px 5px 15px 15px;
+}
+.carousel-control {
+  line-height: 35px;
+}
 /* Log in form styling */
 #login-form {
 	-moz-border-radius: 5px;
@@ -287,7 +381,10 @@ div.button_box {
 	margin-right:auto;
 	padding:20px;
 	width:100%;
-	
+}
+div.button_box p, div.button_box h4, div.button_box ul {
+  color: #222;
+  text-shadow: 1px 1px 2px #ffffff;
 }
 .box {
 	margin-top: 10px;
@@ -348,6 +445,7 @@ div#main ul.nav.maximenuck {
 	border-left: none;
 	border-right: none;
 	height: 30px;
+	font-family: Copperplate, Calibri, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	padding-bottom: 2px;
@@ -429,7 +527,23 @@ div#main ul.maximenuck li.maximenuck.level1 > span.separator {
 	color:#212121 !important;
 	text-shadow:1px 1px 1px #ffffff !important;
 }
-/* --- Table Styles --- */
+/* footer nav */
+ul#footer.nav.menu {
+ font-family: Courier, Helvetica, sans-serif;
+ font-size: 0.8em;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 400px;
+}
+ul#footer.nav.menu li {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: auto;
+}
+/* ================================== Table styles ================================ */
 /* --- Contact Info Table --- */
 table.category td {
 	padding: 1px 4px 1px 4px;
@@ -441,13 +555,16 @@ table.comparison {
 	border-radius: 15px 15px 15px 15px;
 }
 table.comparison th {
-	-moz-border-radius: 0px 5px 5px 0px;
-	-webkit-border-radius: 0px 5px 5px 0px;
-	border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0px 0px 5px;
 }
-
-/*--- K2 Edits ----*/
+/* ================================== K2 styles ================================ */
 /* --- Featured flags --- */
 div.itemIsFeatured,
 div.catItemIsFeatured,
 div.userItemIsFeatured {background:url(../images/system/featuredItem.png) no-repeat 100% 0;}
+/* --- Footer Styles --- */
+ul#footer.nav.menu {
+	float:right;
+}
