@@ -14,7 +14,7 @@ html, body {
 }
 body {
 	font-size: 75%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Copperplate, Calibri, Arial, Helvetica, sans-serif;
 }
 /* =============== DEFAULT HTML - HEADING STYLES =============== */
 h1 {
@@ -440,6 +440,9 @@ div.button_box p, div.button_box h4, div.button_box ul {
 	margin: 0px;
 }
 /* ================================== Menu styles ================================ */
+div#main ul.maximenuck {
+	background: #adadad;
+}
 div#main ul.nav.maximenuck {
 	border-top: none;
 	border-left: none;
@@ -568,3 +571,35 @@ div.userItemIsFeatured {background:url(../images/system/featuredItem.png) no-rep
 ul#footer.nav.menu {
 	float:right;
 }
+
+/*--- Author display ---*/
+div.catItemHeader span.catItemAuthor { 
+  display:none; 
+}
+/*--- Portfolio Images ---*/
+span.catItemImage img {
+  border-radius: 10px;
+}
+div#itemListLinks h3 a:hover {
+  font-decoration:none;
+  background: #afeafe;
+  border-radius: 4px;
+}
+
+/* ================================== Media viewer styles ================================ */
+/* Scalability changes - 1200px, 969px, 768px, 480px */
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width : 768px) and (max-width : 979px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {  }

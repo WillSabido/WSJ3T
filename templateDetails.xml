@@ -7,18 +7,23 @@
         <authorUrl>http://webisabi.co.uk</authorUrl>
         <copyright>Will Sabido 2013</copyright>
         <license>GNU/GPL</license>
-        <version>0.2</version>
+        <version>0.6</version>
         <description>A responsive Joomla! 3.2.3 template</description>
         <files>
                 <filename>index.php</filename>
+                <filename>README</filename>
                 <filename>templateDetails.xml</filename>
-                <folder>images</folder>
+                <filename>template_preview.png</filename>
+                <filename>template_thumbnail.png</filename>
                 <folder>css</folder>
+                <folder>html</folder>
+                <folder>images</folder>
                 <folder>js</folder>
+                <folder>sub</folder>
         </files>
         <positions>
         		<position>login</position>
-                <position>breadcrumb</position>
+                <position>breadcrumbs</position>
                 <position>carousel</position>
                 <position>buttons</position>
                 <position>social</position>

@@ -3,7 +3,7 @@
  *
  * Main file
  *
- * @version             0.2.0
+ * @version             0.6.0
  * @package             Webi Sabi Framework
  * @copyright			Copyright (C) 2014 WebiSabi. All rights reserved.
  *               
@@ -34,6 +34,7 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
 <head>
 	<jdoc:include type="head" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="DEK0Zd44pj8Gj4GIsaT43VPn62tDU5PxglTMD7-n-Yo" />
 </head>
 <body>
     <!-- main container -->
@@ -59,10 +60,11 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
     		</div>
     	</div>
         <!-- mid container - includes main content area and right sidebar -->
-        <div class='mid_container row'>
+        <div class='mid_container row-fluid'>
             <!-- main content area -->
             <div class='main_content_area span9'>
                 <!-- This code will create the module positions for our main content area -->
+				<jdoc:include type="modules" name="mainbody" style="none" />
                 <jdoc:include type="modules" name="breadcrumbs" style="none" />
                 <jdoc:include type="modules" name="social" style="none" />
 				<jdoc:include type="message" />
@@ -84,6 +86,12 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
             <div id='100' class='span12'>
                 <jdoc:include type="modules" name="social" style="none" />
             	<jdoc:include type="modules" name="footer" style="xhtml" />
+            	<div id="bottom">
+					<div class="user1"><jdoc:include type="modules" name="user1" style="xhtml" /></div>
+					<div class="user2"><jdoc:include type="modules" name="user2" style="xhtml" /></div>
+					<div class="user3"><jdoc:include type="modules" name="user3" style="xhtml" /></div>
+				</div>
+
             </div>
         </div>
     </div>
