@@ -32,9 +32,26 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126830430-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126830430-1');
+    </script>
 	<jdoc:include type="head" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png?v=1" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png?v=1" sizes="16x16">
+	<link rel="manifest" href="/manifest.json?v=1">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon.ico?v=1">
+	<meta name="theme-color" content="#ffffff">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="DEK0Zd44pj8Gj4GIsaT43VPn62tDU5PxglTMD7-n-Yo" />
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <!-- main container -->
@@ -44,7 +61,7 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         	<header class="container-fluid">
         		<div class="span8 pull-left">
         			<a href="/." class="pull-left">
-        				<img src="http://webisabihosting.co.uk/images/ws_logo.png" alt="Webi Sabi - Transient beauty in imperfection">
+        				<img src="//webisabihosting.co.uk/images/ws_logo.png" alt="Webi Sabi Hosting - Web Design & Development Services" class="header-logo">
         			</a>
         		</div>
         		<div class="span4 pull-right">
@@ -53,12 +70,12 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         	</header>
     	</div>
     	<div class="menu row">
-    		<div class="span12">
+    		<div class="">
     			<jdoc:include type="modules" name="menu" style="xhtml" />
     		</div>
     	</div>
     	<div class="carousel row">
-    		<div class='span12'>
+    		<div class="span12">
     			<jdoc:include type="modules" name="top" style="none" />
 				<jdoc:include type="modules" name="carousel" style="none" />
     		</div>
@@ -67,7 +84,7 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         <div class="mid_container row-fluid">
             <!-- main content area -->
             <div class="main_content_area span9">
-                <!-- This code will create the module positions for our main content area -->
+                <!-- This code will create the module positions for the main content area -->
 				<jdoc:include type="modules" name="mainbody" style="none" />
                 <jdoc:include type="modules" name="breadcrumbs" style="none" />
                 <jdoc:include type="modules" name="social" style="none" />
@@ -79,9 +96,9 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
                 <jdoc:include type="modules" name="rhs" style="well" />
             </div>
             <div style="clear:both;"></div>
-            <div class="button_box row">
-                <!-- This code will create the module positions for our boxes area -->
-                <jdoc:include type="modules" name="buttons" style="none" class="col-xs-12 col-md-4" />
+            <div class="button_box span12">
+                <!-- This code will create the module positions for the boxes area -->
+                <jdoc:include type="modules" name="buttons" style="none"/>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -96,13 +113,8 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
 					<div class="user3"><jdoc:include type="modules" name="user3" style="xhtml" /></div>
 					<div class="user4"><jdoc:include type="modules" name="user4" style="xhtml" /></div>
 				</div>
-
             </div>
         </div>
     </div>
-<script type="text/javascript"> var $ = jQuery.noConflict(); $(document).ready(function() 
- { $('#myCarousel').carousel({ interval: 8000, cycle: true }); }); 
-
-</script>
 </body>
 </html>
