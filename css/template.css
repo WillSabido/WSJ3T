@@ -42,6 +42,35 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0.5em 0;
 	font-weight: 300;
 }
+/* ================================== Media viewer styles ================================ */
+/* Scalability changes - 1200px, 969px, 768px, 480px */
+/* Landscape phones and down */
+@media only screen and (max-width: 480px) {
+}
+/* Landscape phone to portrait tablet */
+@media only screen and (max-width: 767px) { 
+  #maximenuck-login, ul#navigation {
+    display: none;
+  }
+  #main_mobile_nav.nav, #terms_mobile_nav.nav, #support_mobile_nav.nav, #maximenuck-login-mobile {
+    display: block;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media only screen and (min-width : 768px) and (max-width : 979px) {
+}
+/* Portrait tablet and up */
+@media only screen and (min-width : 768px) {
+  #main.nav, #terms.nav, #support.nav {
+    display: block;
+  }
+  #main_mobile_nav.nav, #terms_mobile_nav.nav, #support_mobile_nav.nav {
+    display: none;
+  }
+}
+/* Large desktop */
+@media only screen and (min-width: 1200px) {
+}
 /* ================================== Custom Heading styles ================================ */
 /* header edits for portfolio */
 h3.catItemTitle a, h2.tagItemTitle a, ul.catItemTags li, div.itemTagsBlock ul li, div.itemCategory a, div.tagItemCategory a {
@@ -621,21 +650,3 @@ div#itemListLinks h3 a:hover {
   font-decoration:none;
   border-radius: 4px;
 }
-
-/* ================================== Media viewer styles ================================ */
-/* Scalability changes - 1200px, 969px, 768px, 480px */
-/* Large desktop */
-@media (min-width: 1200px) {
-
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width : 768px) and (max-width : 979px) {
-
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {  }
-
-/* Landscape phones and down */
-@media (max-width: 480px) {  }

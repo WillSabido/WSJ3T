@@ -79,9 +79,9 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
                 <jdoc:include type="modules" name="rhs" style="well" />
             </div>
             <div style="clear:both;"></div>
-            <div class="button_box span12">
+            <div class="button_box row">
                 <!-- This code will create the module positions for our boxes area -->
-                <jdoc:include type="modules" name="buttons" style="none" />
+                <jdoc:include type="modules" name="buttons" style="none" class="col-xs-12 col-md-4" />
             </div>
             <div style="clear:both;"></div>
         </div>
