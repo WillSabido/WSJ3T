@@ -59,9 +59,9 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
         <!-- header -->
         <div class="row">
         	<header class="container-fluid">
-        		<div class="span8 pull-left">
-        			<a href="/." class="pull-left">
-        				<img src="//webisabihosting.co.uk/images/ws_logo.png" alt="Webi Sabi Hosting - Web Design & Development Services" class="header-logo">
+        		<div class="span8">
+        			<a href="/." class="">
+        				<img src="//webisabihosting.co.uk/images/ws_logo.png" alt="Webi Sabi Hosting - Web Design & Development Services" class="pull-left header-logo">
         			</a>
         		</div>
         		<div class="span4 pull-right">
